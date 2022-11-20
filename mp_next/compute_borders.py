@@ -8,8 +8,9 @@ def compute_borders(x: str, m: int):
         border[i + 1] = j + 1
     return border
 
-print("Enter the string to compute borders for: ")
-input_string = input()
-result = compute_borders(input_string, len(input_string))
-print("Values for NP_next table are: ", result)
+if __name__ == "__main__":
+    print("Enter the string to compute borders for: ")
+    input_string = input()
+    result = compute_borders(input_string, len(input_string))
+    print("Values for NP_next table are: ", result)
     
